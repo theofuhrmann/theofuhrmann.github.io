@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  var canvas = createCanvas(400, windowHeight);
+  canvas.parent('artwork');
 }
 
 function draw() {
@@ -8,7 +9,6 @@ function draw() {
   //noStroke();
   blendMode(MULTIPLY);
   noStroke();
-  translate(-0.9*width/2,0.9*height/2);
   fill(0,255,255);
   drawLiq(19,35,23,10000);
   fill(255,255,0);
