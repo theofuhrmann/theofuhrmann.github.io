@@ -1,12 +1,18 @@
 let xoff = 0.0;
 
 function setup() {
-  createCanvas(400, windowHeight);
+  var canvas = createCanvas(400, windowHeight);
+  canvas.style('display', 'block');
+  canvas.parent('sketch');
+}
+
+function windowResized() {
+	resizeCanvas(400, windowHeight);
 }
 
 function draw() {
   blendMode(BLEND);
-  background(255);
+  background(217,195,165);
   noStroke();
   blendMode(MULTIPLY);
   fill(253, 253, 149);
@@ -26,8 +32,9 @@ function wave(x0, x1, t) {
     vertex(x, y);
     yoff += t;
   }
+  let x = map(noise(yoff, xoff), 0, 1, x0, x1);
+  vertex(x,height);
   xoff += 0.002;
-  vertex(400, height);
   vertex(0, height);
   vertex(0,0);
   endShape(CLOSE);

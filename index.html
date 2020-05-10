@@ -4,30 +4,32 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="stylesheet" href="style.css"> -->
 		<script language="javascript" type="text/javascript" src="sideBar/libraries/p5.min.js"></script>
+		<script language="javascript" type="text/javascript" src="sideBar/sideBar.js"></script>
 		<title>My Portfolio</title>
 	</head>
 	<body>
 		<div id="sketch">
-			<h2 id="barTitle">My Portfolio</h2>
+			<h2>My Portfolio</h2>
 		</div>
 	</body>
-	<script language="javascript" type="text/javascript" src="sideBar/sideBar.js"></script>
 </html>
 
 <style>
+	body {
+		background-color: rgb(217,195,165);
+	}
 	#defaultCanvas0 {
 		position: fixed;
 		z-index: -1;
 		top: 0px;
 		left: 0px;
 	}
-	#sketch {
-		text-align: center;
-	}
-	#barTitle {
-		color: black;
+	#sketch h2 {
+		color: rgb(217,195,165);
 		font-family: "Hack-Bold";
+		margin-left: 40px;
 	}
 	@font-face {
 		font-family: Hack-regular;
