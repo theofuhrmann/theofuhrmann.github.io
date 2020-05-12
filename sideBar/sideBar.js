@@ -1,9 +1,9 @@
 let xoff = 0.0;
 
 function setup() {
-  var canvas = createCanvas(400, windowHeight);
-  canvas.style('display', 'block');
-  canvas.parent('sketch');
+  var canvas = createCanvas(375, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index', '-1');
 }
 
 function windowResized() {
