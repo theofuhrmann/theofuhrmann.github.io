@@ -38,11 +38,11 @@ function wave(x0, x1, t, m) {
     let xoff = 0;
 
     for (let x = 0; x <= width; x += 15) {
-      let y = map(noise(xoff, yoff), 0, 1, 150, 250);
+      let y = map(noise(xoff, yoff), 0, 1, 100, 200);
       vertex(x, y);
       xoff += t;
     }
-    let y = map(noise(xoff, yoff), 0, 1, 150, 250);
+    let y = map(noise(xoff, yoff), 0, 1, 100, 200);
     vertex(width, y);
     yoff += 0.002;
     vertex(width, 0);
