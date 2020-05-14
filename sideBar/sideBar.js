@@ -1,10 +1,15 @@
 let xoff = 0.0;
 let yoff = 0.0;
-
 let mobile = false;
 
 function setup() {
-  var canvas = createCanvas(375, windowHeight);
+  var canvas;
+  if (windowWidth < 800) {
+    canvas = createCanvas(windowWidth, 300);
+    mobile = true;
+  } else {
+    canvas = createCanvas(375, windowHeight);
+  }
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
 }
@@ -14,7 +19,7 @@ function windowResized() {
     resizeCanvas (windowWidth, 300);
     mobile = true;
   } else {
-    resizeCanvas(400, windowHeight);
+    resizeCanvas(375, windowHeight);
     mobile = false;
   }
 }
@@ -48,8 +53,7 @@ function wave(x0, x1, t, m) {
     vertex(width, 0);
     vertex(0, 0);
     endShape(CLOSE);
-  }
-  else {
+  } else {
     beginShape();
     let yoff = 0;
 
