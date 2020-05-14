@@ -22,29 +22,39 @@ body {
 #sidebar h1 {
 	margin-left: 10%;
 }
+#sidebar h1::after {
+	content:"_";
+	animation: blink 1.5s step-end infinite;
+}
 #sidebar ul li {
 	list-style: none;
 	text-decoration: none;
 	padding-bottom: 20px;
 }
 #sidebar ul li:hover {
-	color: rgb(205, 182, 78);
+	color: rgb(214, 192, 103);
 }
 #content {
-	margin: 50px 80px 50px 40px;
-	color: rgb(67,48,41);
+	margin: 50px 50px 50px 40px;
+	color: rgb(85,63,55);
 	overflow: auto;
 	min-height: 0;
+	padding-right: 30px;
 }
 #about h1{
-	color: rgb(72, 91, 106);
+	color: rgb(90, 111, 125);
 }
 #work h1 {
-	color: rgb(196, 90, 103);
-	color: rgb(71, 92, 57);
+	color: rgb(89, 109, 75);
 }
 #random h1 {
-	color: rgb(194, 90, 56);
+	color: rgb(205, 111, 76);
+}
+#content::-webkit-scrollbar{
+	width: 10px;
+}
+#content::-webkit-scrollbar-thumb {
+	background-color: rgb(85,63,55);
 }
 @font-face {
 	font-family: "Hack";
@@ -54,4 +64,10 @@ body {
 	font-family: "Hack";
 	src: url(Fonts/Hack-Bold.ttf);
 	font-weight: bold;
+}
+@keyframes blink {
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	50.01%{opacity: 1;}
+	100%{opacity: 1;}
 }
