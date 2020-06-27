@@ -6,7 +6,6 @@ body {
 	margin: 0px;
 }
 #wrapper {
-	position: absolute;
 	display: flex;
 	height: 100vh;
 }
@@ -40,11 +39,12 @@ body {
 	color: rgb(214, 192, 103);
 }
 #content {
-	margin: 50px 50px 50px 40px;
+	margin: 30px;
 	color: rgb(85,63,55);
 	overflow: auto;
 	min-height: 0;
 	padding-right: 30px;
+	scroll-behavior: smooth;	
 }
 #about h1{
 	color: rgb(90, 111, 125);
@@ -57,9 +57,11 @@ body {
 }
 #content::-webkit-scrollbar{
 	width: 10px;
+	border: solid 30px transparent;
 }
 #content::-webkit-scrollbar-thumb {
 	background-color: rgb(85,63,55);
+	border: solid 30px transparent;
 }
 @media only screen and (max-width: 800px) {
 	#wrapper {
@@ -71,14 +73,24 @@ body {
 		height: 200px;
 		width: 100vw;
 	}
+	#sidebar h1 {
+		margin-top: 20px;
+	}
 	#sidebar ul li {
-		margin-top: 80px;
+		margin-top: 55px;
 		padding-left: 10px;
 		float: left;
+	}
+	#content {
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 }
 @media only screen and (max-width: 500px) {
 	#sidebar ul li {
+		display: none;
+	}
+	#content::-webkit-scrollbar {
 		display: none;
 	}
 }

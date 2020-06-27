@@ -5,7 +5,7 @@ let mobile = false;
 function setup() {
   var canvas;
   if (windowWidth < 800) {
-    canvas = createCanvas(windowWidth, 300);
+    canvas = createCanvas(windowWidth, 200);
     mobile = true;
   } else {
     canvas = createCanvas(375, windowHeight);
@@ -16,7 +16,7 @@ function setup() {
 
 function windowResized() {
   if (windowWidth < 800) {
-    resizeCanvas (windowWidth, 300);
+    resizeCanvas (windowWidth, 200);
     mobile = true;
   } else {
     resizeCanvas(375, windowHeight);
@@ -43,11 +43,11 @@ function wave(x0, x1, t, m) {
     let xoff = 0;
 
     for (let x = 0; x <= width; x += 15) {
-      let y = map(noise(xoff, yoff), 0, 1, 150, 250);
+      let y = map(noise(xoff, yoff), 0, 1, 100, 200);
       vertex(x, y);
       xoff += t;
     }
-    let y = map(noise(xoff, yoff), 0, 1, 150, 250);
+    let y = map(noise(xoff, yoff), 0, 1, 100, 200);
     vertex(width, y);
     yoff += 0.002;
     vertex(width, 0);
