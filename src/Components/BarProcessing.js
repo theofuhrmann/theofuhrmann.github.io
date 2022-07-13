@@ -82,7 +82,6 @@ class BarProcessing extends React.Component {
         setup={this.setup}
         draw={this.draw}
         windowResized={this.windowResized}
-        style={{ position: "sticky" }}
       />
     );
   }
