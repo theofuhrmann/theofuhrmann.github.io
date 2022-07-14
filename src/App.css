@@ -11,6 +11,7 @@
   overflow: auto;
   padding-right: 30px;
   scroll-behavior: smooth;
+  z-index: -99999;
 }
 
 .text {
@@ -25,14 +26,13 @@
 
 nav {
   color: rgb(217, 195, 165);
-  flex-shrink: 0;
-  display: inline-flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 375px;
-  justify-content: center;
-  position: sticky;
   top: 0;
+}
+
+.nav-links {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
 }
 
 .title {
@@ -45,12 +45,6 @@ nav {
   animation: blink 1.5s step-end infinite;
 }
 
-.nav-links {
-  list-style: none;
-  text-decoration: none;
-  padding-bottom: 10%;
-}
-
 .nav-link:hover {
   font-family: Hack-bold;
   color: rgb(203, 107, 124);
@@ -59,7 +53,60 @@ nav {
 .nav-link {
   color: rgb(217, 195, 165);
   text-decoration: none;
-  padding-left: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 375px;
+    justify-content: center;
+    position: sticky;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    height: 125px;
+    justify-content: center;
+    position: sticky;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-link {
+    margin-left: 40px;
+  }
+
+  .first-nav {
+    margin-left: 0px;
+  }
 }
 
 @keyframes blink {
