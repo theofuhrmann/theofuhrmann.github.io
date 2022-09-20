@@ -28,16 +28,16 @@ function App() {
 }
 
 const Home = () => (
-  <div className="content">
+  <>
     <Helmet>
       <title>Théo's Portfolio | Home </title>
     </Helmet>
     <div className="text-home">
       <img src={profilePicture} alt="" className="profile-picture"></img>
-      <h1>Hey!</h1>
-      <p>My name is Théo, welcome to my personal portfolio! Have a look!</p>
+      <h1>Hey, my name is Théo</h1>
+      <p>Welcome to my personal portfolio! Have a look!</p>
     </div>
-  </div>
+  </>
 );
 
 export default App;

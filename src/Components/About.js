@@ -4,7 +4,7 @@ import "../App.css";
 
 function About() {
   return (
-    <div>
+    <>
       <Helmet>
         <title>Théo's Portfolio | About </title>
       </Helmet>
@@ -56,7 +56,7 @@ function About() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-    </div>
+    </>
   );
 }
 

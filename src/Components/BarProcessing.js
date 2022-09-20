@@ -30,29 +30,31 @@ class BarProcessing extends React.Component {
   };
 
   draw = (p5) => {
-    p5.blendMode(p5.BLEND);
-    p5.background(217, 195, 165);
+    p5.clear();
     p5.noStroke();
     p5.blendMode(p5.MULTIPLY);
-    p5.fill(253, 253, 149);
-    this.wave(p5, 250, 375, 0.05, this.mobile);
-    p5.fill(104, 145, 195);
-    this.wave(p5, 250, 375, 0.03, this.mobile);
-    p5.fill(246, 146, 188);
-    this.wave(p5, 250, 375, 0.07, this.mobile);
+    // p5.fill(253, 253, 149);
+    p5.fill(214, 192, 103);
+    this.wave(p5, 250, 375, 100, 0.07, this.mobile);
+    // p5.fill(104, 145, 195);
+    p5.fill(90, 111, 125);
+    this.wave(p5, 260, 375, 105, 0.03, this.mobile);
+    // p5.fill(246, 146, 188);
+    p5.fill(207, 113, 123);
+    this.wave(p5, 255, 375, 110, 0.05, this.mobile);
   };
 
-  wave = (p5, x0, x1, t, m) => {
+  wave = (p5, x0, x1, h, t, m) => {
     if (m) {
       p5.beginShape();
       this.xoff = 0;
 
       for (let x = 0; x <= p5.width; x += 15) {
-        let y = p5.map(p5.noise(this.xoff, this.yoff), 0, 1, 100, 200);
+        let y = p5.map(p5.noise(this.xoff, this.yoff), 0, 1, h, 200);
         p5.vertex(x, y);
         this.xoff += t;
       }
-      let y = p5.map(p5.noise(this.xoff, this.yoff), 0, 1, 100, 200);
+      let y = p5.map(p5.noise(this.xoff, this.yoff), 0, 1, h, 200);
       p5.vertex(p5.width, y);
       this.yoff += 0.002;
       p5.vertex(p5.width, 0);

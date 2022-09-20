@@ -1,3 +1,7 @@
+h1 {
+  margin-bottom: 0;
+}
+
 .wrapper {
   display: flex;
 }
@@ -9,9 +13,8 @@
   color: rgb(85, 63, 55);
   justify-content: center;
   overflow: auto;
-  padding-right: 30px;
   scroll-behavior: smooth;
-  z-index: -99999;
+  z-index: -2;
 }
 
 .text {
@@ -19,9 +22,13 @@
 }
 
 .text-home {
-  display: table-cell;
+  margin: 30px;
+  color: rgb(85, 63, 55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  vertical-align: middle;
 }
 
 nav {
@@ -60,6 +67,10 @@ nav {
     flex-direction: row;
   }
 
+  .content {
+    margin-left: 0;
+  }
+
   nav {
     flex-shrink: 0;
     display: inline-flex;
@@ -95,17 +106,31 @@ nav {
   }
 
   .nav-links {
+    margin: 10px 25px 15px;
     flex-direction: row;
+    flex-grow: 1;
     align-items: center;
     padding: 0;
   }
 
   .nav-link {
-    margin-left: 40px;
+    flex-grow: 1;
   }
 
   .first-nav {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .title-break {
+    display: none;
+  }
+  .nav-link {
+    display: none;
+  }
+  .first-nav {
+    display: flex;
   }
 }
 
@@ -137,8 +162,9 @@ nav {
 
 .profile-picture {
   height: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   border-color: rgb(85, 63, 55);
-  border-width: 5px;
+  border-width: 4px;
   border-style: solid;
+  z-index: -2;
 }

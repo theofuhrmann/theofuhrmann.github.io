@@ -18,14 +18,14 @@ function Random() {
   };
 
   return (
-    <div>
+    <>
       <Helmet>
         <title>Théo's Portfolio | Random </title>
       </Helmet>
       <div className="content">
-        <h1 style={{color: "rgb(205, 111, 76)"}}>Random</h1>
+        <h1 style={{ color: "rgb(205, 111, 76)" }}>Random</h1>
       </div>
-    </div>
+    </>
   );
 }
 
