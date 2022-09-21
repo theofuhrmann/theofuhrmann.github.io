@@ -9,15 +9,26 @@ function Timeline() {
         <title>Théo's Portfolio | Timeline </title>
       </Helmet>
       <div className="content">
-        <h1 style={{ color: "rgb(90, 111, 125)" }}>Timeline</h1>
-        <p>
-          I am a recent Computer Science graduate (July 2022) from the
-          Polytechnic University of Catalonia (UPC) specializing in Artificial
-          Intelligence and algorithms. My passion is Computer Science. My main
-          interests have been Machine Learning and Data Science since I learnt
-          Timeline them in college. Other interests involve Natural Language
-          Processing and Computer Vision.
-        </p>
+        <h1 style={{ color: "rgb(205, 111, 76)" }}>Timeline</h1>
+        <ul className="content-ul">
+          <li className="content-li">
+            <h3> DISCOVERFY </h3>
+            <p>
+              For my final thesis for my Computer Science degree I trained
+              various machine learning models with gathered CVE data to predict
+              the potential exploitability of cybervulnerabilities.
+              <br />
+              <br />
+            </p>
+            <a
+              className="link"
+              href="https://github.com/theofuhrmann/cybervulnerability-exploitability-classifier"
+              target="_blank"
+            >
+              GitHub repository
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );

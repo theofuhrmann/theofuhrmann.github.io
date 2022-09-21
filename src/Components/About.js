@@ -23,16 +23,14 @@ function About() {
           If you would like to have a look at my CV you can click in the button
           below:
         </p>
-        <button>
-          <Link
-            className="link"
-            to={require("../Documents/CV.pdf")}
-            download="CV"
-            target="_blank"
-          >
-            CV
-          </Link>
-        </button>
+        <Link
+          className="link"
+          to={require("../Documents/CV.pdf")}
+          download="CV"
+          target="_blank"
+        >
+          CV
+        </Link>
       </div>
     </>
   );

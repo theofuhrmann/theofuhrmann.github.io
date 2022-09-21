@@ -17,7 +17,7 @@ function Nav() {
         </Link>
         <div className="wrap-links">
           <Link to="/about" className="nav-link wrap-link">
-            <li>About</li>
+            <li> About</li>
           </Link>
           <Link to="/projects" className="nav-link wrap-link">
             <li>Projects</li>
