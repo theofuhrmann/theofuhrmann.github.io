@@ -15,7 +15,6 @@ class BarProcessing extends React.Component {
       this.canvas = p5.createCanvas(375, window.innerHeight);
     }
     this.canvas.position(0, 0);
-    this.canvas.style("z-index", "-1");
     this.canvas.style("position", "fixed");
   };
 

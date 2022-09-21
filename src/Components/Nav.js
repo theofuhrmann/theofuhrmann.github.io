@@ -15,15 +15,23 @@ function Nav() {
             </h1>
           </li>
         </Link>
-        <Link to="/about" className="nav-link">
-          <li>About</li>
-        </Link>
-        <Link to="/work" className="nav-link">
-          <li>Work</li>
-        </Link>
-        <Link to="/random" className="nav-link">
-          <li>Random</li>
-        </Link>
+        <div className="wrap-links">
+          <Link to="/about" className="nav-link wrap-link">
+            <li>About</li>
+          </Link>
+          <Link to="/projects" className="nav-link wrap-link">
+            <li>Projects</li>
+          </Link>
+          <Link to="/timeline" className="nav-link wrap-link">
+            <li>Timeline</li>
+          </Link>
+          <Link to="/random" className="nav-link wrap-link">
+            <li>Random</li>
+          </Link>
+          <Link to="/contact" className="nav-link wrap-link">
+            <li>Contact</li>
+          </Link>
+        </div>
       </ul>
     </nav>
   );

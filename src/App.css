@@ -6,6 +6,33 @@ h1 {
   display: flex;
 }
 
+ul {
+  list-style: none;
+}
+
+button {
+  border-radius: 0;
+  background-color: rgb(85, 63, 55);
+  color: rgb(217, 195, 165);
+  border: none;
+  padding: 10px;
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: rgb(217, 195, 165);
+}
+
+a:hover,
+.link:hover {
+  color: rgb(203, 107, 124);
+}
+
+button .wrapper {
+  display: flex;
+}
+
 .content {
   display: table;
   flex: 1;
@@ -14,7 +41,6 @@ h1 {
   justify-content: center;
   overflow: auto;
   scroll-behavior: smooth;
-  z-index: -2;
 }
 
 .text {
@@ -62,6 +88,10 @@ nav {
   text-decoration: none;
 }
 
+.wrap-link {
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 800px) {
   .wrapper {
     flex-direction: row;
@@ -92,6 +122,15 @@ nav {
 }
 
 @media screen and (max-width: 799px) {
+  .wrap-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wrap-link {
+    margin-right: 15px;
+  }
+
   .wrapper {
     flex-direction: column;
   }
@@ -119,6 +158,7 @@ nav {
 
   .first-nav {
     margin-left: 0px;
+    margin-right: 8px;
   }
 }
 
