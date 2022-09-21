@@ -15,13 +15,13 @@ function Nav() {
             </h1>
           </li>
         </Link>
-        <Link to="/#about" className="nav-link">
+        <Link to="/about" className="nav-link">
           <li>About</li>
         </Link>
-        <Link to="/#work" className="nav-link">
+        <Link to="/work" className="nav-link">
           <li>Work</li>
         </Link>
-        <Link to="/#random" className="nav-link">
+        <Link to="/random" className="nav-link">
           <li>Random</li>
         </Link>
       </ul>
