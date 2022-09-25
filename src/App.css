@@ -1,0 +1,241 @@
+h1,
+h2,
+h3 {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.content-ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.content-li {
+  margin-bottom: 40px;
+}
+
+.button-link {
+  text-decoration: none;
+  color: rgb(217, 195, 165);
+  background-color: rgb(85, 63, 55);
+  padding: 12px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.button-link:hover {
+  background-color: rgb(203, 107, 124);
+}
+
+.address-link {
+  color: rgb(85, 63, 55);
+  font-weight: bold;
+}
+
+.content {
+  display: table;
+  flex: 1;
+  margin: 30px;
+  color: rgb(85, 63, 55);
+  justify-content: center;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.text {
+  color: rgb(85, 63, 55);
+}
+
+.text-home {
+  margin: 30px;
+  color: rgb(85, 63, 55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  color: rgb(217, 195, 165);
+  top: 0;
+  z-index: 1;
+}
+
+.nav-links {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: Hack;
+  font-size: xx-large;
+}
+
+.title::after {
+  content: "_";
+  animation: blink 1.5s step-end infinite;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  font-family: Hack-bold;
+  color: rgb(203, 107, 124);
+}
+
+.nav-link {
+  color: rgb(217, 195, 165);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.wrap-link {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .content {
+    margin-left: 0;
+    max-width: 700px;
+  }
+
+  nav {
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 375px;
+    justify-content: center;
+    position: sticky;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content {
+    margin-top: 50px;
+  }
+
+  .wrap-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wrap-link {
+    margin-right: 15px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: row;
+    height: 125px;
+    justify-content: center;
+    position: sticky;
+  }
+
+  .nav-links {
+    margin: 10px 25px 15px;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-link {
+    flex-grow: 1;
+  }
+
+  .first-nav {
+    margin-left: 0px;
+    margin-right: 8px;
+  }
+
+  .text-home {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .title-break {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+  .first-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.01% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url(Fonts/Hack-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url(Fonts/Hack-Bold.ttf);
+  font-weight: bold;
+}
+
+.profile-picture {
+  height: 150px;
+  border-radius: 50%;
+  border-color: rgb(85, 63, 55);
+  border-width: 4px;
+  border-style: solid;
+  z-index: -2;
+}
+
+.timeline-picture {
+  height: 80px;
+  border-radius: 50%;
+  border-color: rgb(85, 63, 55);
+  border-width: 4px;
+  border-style: solid;
+}
