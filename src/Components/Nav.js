@@ -1,12 +1,16 @@
 import React from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
     <nav>
       <ul className="nav-links">
-        <Link to="/" className="nav-link first-nav">
+        <NavLink
+          activeStyle={{ color: "rgb(203, 107, 124)" }}
+          to="/"
+          className="nav-link first-nav"
+        >
           <li>
             <h1 className="title">
               Théo&nbsp;
@@ -14,23 +18,39 @@ function Nav() {
               Fuhrmann
             </h1>
           </li>
-        </Link>
+        </NavLink>
         <div className="wrap-links">
-          <Link to="/about" className="nav-link wrap-link">
-            <li> About</li>
-          </Link>
-          <Link to="/projects" className="nav-link wrap-link">
-            <li>Projects</li>
-          </Link>
-          <Link to="/timeline" className="nav-link wrap-link">
-            <li>Timeline</li>
-          </Link>
-          {/* <Link to="/random" className="nav-link wrap-link">
+          <NavLink
+            activeStyle={{ color: "rgb(203, 107, 124)" }}
+            to="/about"
+            className="wrap-link"
+          >
+            <li className="nav-link"> About</li>
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "rgb(203, 107, 124)" }}
+            to="/projects"
+            className="wrap-link"
+          >
+            <li className="nav-link">Projects</li>
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "rgb(203, 107, 124)" }}
+            to="/timeline"
+            className="wrap-link"
+          >
+            <li className="nav-link">Timeline</li>
+          </NavLink>
+          {/* <NavLink to="/random" className="nav-link wrap-link">
             <li>Random</li>
-          </Link> */}
-          <Link to="/contact" className="nav-link wrap-link">
-            <li>Contact</li>
-          </Link>
+          </NavLink> */}
+          <NavLink
+            activeStyle={{ color: "rgb(203, 107, 124)" }}
+            to="/contact"
+            className="wrap-link"
+          >
+            <li className="nav-link">Contact</li>
+          </NavLink>
         </div>
       </ul>
     </nav>

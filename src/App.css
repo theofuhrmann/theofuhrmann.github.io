@@ -60,7 +60,6 @@ h3 {
 }
 
 nav {
-  color: rgb(217, 195, 165);
   top: 0;
   z-index: 1;
 }
@@ -86,21 +85,24 @@ nav {
   animation: blink 1.5s step-end infinite;
 }
 
-.nav-link:hover,
-.nav-link:active,
-.nav-link:focus {
-  font-family: Hack-bold;
-  color: rgb(203, 107, 124);
-}
-
 .nav-link {
-  color: rgb(217, 195, 165);
   text-decoration: none;
   margin-top: 10px;
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.wrap-link:hover,
+.wrap-link:focus,
+.wrap-link:active {
+  color: rgb(203, 107, 124);
+}
+
 .wrap-link {
+  color: rgb(217, 195, 165);
   margin-top: 10px;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -173,6 +175,7 @@ nav {
   }
 
   .first-nav {
+    color: rgb(217, 195, 165);
     margin-left: 0px;
     margin-right: 8px;
   }
@@ -189,6 +192,7 @@ nav {
 
   .nav-links {
     flex-direction: column;
+    margin: 5px 5px 20px;
   }
   .first-nav {
     display: flex;
