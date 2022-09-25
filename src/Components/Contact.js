@@ -9,14 +9,23 @@ function Contact() {
         <title>Théo's Portfolio | Contact </title>
       </Helmet>
       <div className="content">
-        <h1 style={{ color: "rgb(90, 111, 125)" }}>Contact</h1>
+        <h1 style={{ color: "rgb(73, 48, 60)" }}>Contact ✉️</h1>
         <p>
-          I am a recent Computer Science graduate (July 2022) from the
-          Polytechnic University of Catalonia (UPC) specializing in Artificial
-          Intelligence and algorithms. My passion is Computer Science. My main
-          interests have been Machine Learning and Data Science since I learnt
-          Contact them in college. Other interests involve Natural Language
-          Processing and Computer Vision.
+          You can find me on{" "}
+          <a href="https://github.com/theofuhrmann" className="address-link">
+            GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/theofuhrmann/"
+            className="address-link"
+          >
+            LinkedIn
+          </a>
+          . Also feel free to send me an email at{" "}
+          <a href="mailto:theositges@gmail.com" className="address-link">
+            theositges@gmail.com
+          </a>{" "}
         </p>
       </div>
     </>

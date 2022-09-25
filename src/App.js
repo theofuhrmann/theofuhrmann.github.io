@@ -7,7 +7,7 @@ import Projects from "./Components/Projects";
 import Timeline from "./Components/Timeline";
 import Contact from "./Components/Contact";
 import Work from "./Components/Work";
-import Random from "./Components/Random";
+// import Random from "./Components/Random";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BarProcessing from "./Components/BarProcessing";
 import profilePicture from "./Images/profile.jpeg";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/random" element={<Random />} />
+          {/* <Route path="/random" element={<Random />} /> */}
         </Routes>
       </Router>
       <div />

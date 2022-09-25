@@ -25,9 +25,9 @@ function Nav() {
           <Link to="/timeline" className="nav-link wrap-link">
             <li>Timeline</li>
           </Link>
-          <Link to="/random" className="nav-link wrap-link">
+          {/* <Link to="/random" className="nav-link wrap-link">
             <li>Random</li>
-          </Link>
+          </Link> */}
           <Link to="/contact" className="nav-link wrap-link">
             <li>Contact</li>
           </Link>
