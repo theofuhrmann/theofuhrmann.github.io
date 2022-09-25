@@ -64,6 +64,10 @@ nav {
   z-index: 1;
 }
 
+.first-nav {
+  color: rgb(217, 195, 165);
+}
+
 .nav-links {
   list-style: none;
   text-decoration: none;
@@ -175,7 +179,6 @@ nav {
   }
 
   .first-nav {
-    color: rgb(217, 195, 165);
     margin-left: 0px;
     margin-right: 8px;
   }
