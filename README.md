@@ -1,3 +1,3 @@
-# theofuhrmann.github.io
+# https://theofuhrmann.github.io/
 
-This will eventually become my portfolio!
+Welcome to my portfolio!
