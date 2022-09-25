@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.019ce92a.css",
-    "main.js": "/static/js/main.623cd178.js",
-    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
-    "static/media/Hack-Bold.ttf": "/static/media/Hack-Bold.d34bf8455d60ea80189e.ttf",
-    "static/media/Hack-Regular.ttf": "/static/media/Hack-Regular.f2412cb7f3af2d1a6db0.ttf",
-    "static/media/profile.jpeg": "/static/media/profile.0c7833f08e4f3404c989.jpeg",
-    "static/media/CV.pdf": "/static/media/CV.923649506641807fd454.pdf",
-    "static/media/tempsdelleure.png": "/static/media/tempsdelleure.4ed396a90aaac6f1f2ae.png",
-    "static/media/picnic.jpg": "/static/media/picnic.5283ec5880c947cffb6b.jpg",
-    "static/media/sitgespc.jpg": "/static/media/sitgespc.5667d9331ea9460c7bb1.jpg",
-    "index.html": "/index.html",
-    "main.019ce92a.css.map": "/static/css/main.019ce92a.css.map",
-    "main.623cd178.js.map": "/static/js/main.623cd178.js.map",
-    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+    "main.css": "/theofuhrmann/theofuhrmann.github.io/static/css/main.fadd749b.css",
+    "main.js": "/theofuhrmann/theofuhrmann.github.io/static/js/main.d5652c9d.js",
+    "static/js/787.71e672d5.chunk.js": "/theofuhrmann/theofuhrmann.github.io/static/js/787.71e672d5.chunk.js",
+    "static/media/Hack-Bold.ttf": "/theofuhrmann/theofuhrmann.github.io/static/media/Hack-Bold.d34bf8455d60ea80189e.ttf",
+    "static/media/Hack-Regular.ttf": "/theofuhrmann/theofuhrmann.github.io/static/media/Hack-Regular.f2412cb7f3af2d1a6db0.ttf",
+    "static/media/profile.jpeg": "/theofuhrmann/theofuhrmann.github.io/static/media/profile.0c7833f08e4f3404c989.jpeg",
+    "static/media/CV.pdf": "/theofuhrmann/theofuhrmann.github.io/static/media/CV.923649506641807fd454.pdf",
+    "static/media/tempsdelleure.png": "/theofuhrmann/theofuhrmann.github.io/static/media/tempsdelleure.4ed396a90aaac6f1f2ae.png",
+    "static/media/picnic.jpg": "/theofuhrmann/theofuhrmann.github.io/static/media/picnic.5283ec5880c947cffb6b.jpg",
+    "static/media/sitgespc.jpg": "/theofuhrmann/theofuhrmann.github.io/static/media/sitgespc.5667d9331ea9460c7bb1.jpg",
+    "index.html": "/theofuhrmann/theofuhrmann.github.io/index.html",
+    "main.fadd749b.css.map": "/theofuhrmann/theofuhrmann.github.io/static/css/main.fadd749b.css.map",
+    "main.d5652c9d.js.map": "/theofuhrmann/theofuhrmann.github.io/static/js/main.d5652c9d.js.map",
+    "787.71e672d5.chunk.js.map": "/theofuhrmann/theofuhrmann.github.io/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.019ce92a.css",
-    "static/js/main.623cd178.js"
+    "static/css/main.fadd749b.css",
+    "static/js/main.d5652c9d.js"
   ]
 }
