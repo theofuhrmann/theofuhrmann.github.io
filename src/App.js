@@ -40,8 +40,11 @@ const Home = () => (
     </Helmet>
     <div className="text-home">
       <img src={profilePicture} alt="" className="profile-picture"></img>
-      <h1>Hey, my name is Théo</h1>
-      <p>Welcome to my personal portfolio! Have a look!</p>
+      <h1>Hey! My name is Théo</h1>
+      <p>
+        Welcome to my personal portfolio, where I can
+        <br /> tell you a little bit about myself! Have a look!
+      </p>
     </div>
   </>
 );
