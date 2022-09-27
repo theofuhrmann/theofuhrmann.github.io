@@ -9,7 +9,7 @@ function Contact() {
         <title>Théo's Portfolio | Contact </title>
       </Helmet>
       <div className="content">
-        <h1 style={{ color: "rgb(73, 48, 60)" }}>Contact ✉️</h1>
+        <h1 style={{ color: "rgb(205, 111, 76)" }}>Contact ✉️</h1>
         <p>
           You can find me on{" "}
           <a href="https://github.com/theofuhrmann" className="address-link">

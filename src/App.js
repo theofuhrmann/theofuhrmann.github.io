@@ -10,6 +10,7 @@ import Contact from "./Components/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BarProcessing from "./Components/BarProcessing";
 import profilePicture from "./Images/profile.jpeg";
+import Upc from "./Images/upc.png";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ const Home = () => (
     <div className="content">
       <div className="picture-header profile-header">
         <img src={profilePicture} alt="" className="profile-picture"></img>
-        <div className="picture-text">
+        <div className="picture-text profile-text">
           <h1>Hey! My name is Théo</h1>
           <p>
             Welcome to my personal portfolio, where I can
@@ -46,7 +47,12 @@ const Home = () => (
           </p>
         </div>
       </div>
-
+      <img
+        src={Upc}
+        alt=""
+        className="small-picture"
+        style={{ margin: "16px 0px 8px 10px", float: "right" }}
+      />
       <p>
         I am a recent Computer Science graduate (July 2022) from the Polytechnic
         University of Catalonia (UPC) specializing in Artificial Intelligence
@@ -55,6 +61,7 @@ const Home = () => (
         college. Other interests involve Natural Language Processing and
         Computer Vision.
       </p>
+
       <p>
         If you would like to have a look at my CV you can click in the button to
         download it below:

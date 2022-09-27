@@ -13,7 +13,7 @@ function Projects() {
         <title>Théo's Portfolio | Projects </title>
       </Helmet>
       <div className="content">
-        <h1 style={{ color: "rgb(90, 109, 77)" }}>Projects ✏️</h1>
+        <h1 style={{ color: "rgb(90, 111, 125)" }}>Projects ✏️</h1>
         <ul className="content-ul">
           <li className="content-li">
             <div className="picture-header">

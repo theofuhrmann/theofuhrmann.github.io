@@ -168,6 +168,10 @@ nav {
   .nav-link {
     margin-bottom: 10px;
   }
+
+  .profile-header {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 799px) {
@@ -240,6 +244,10 @@ nav {
   .profile-header {
     display: flex;
     flex-direction: column;
+  }
+
+  .profile-text {
+    margin: 0px;
   }
 }
 

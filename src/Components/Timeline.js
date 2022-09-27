@@ -13,7 +13,7 @@ function Timeline() {
         <title>Théo's Portfolio | Timeline </title>
       </Helmet>
       <div className="content">
-        <h1 style={{ color: "rgb(205, 111, 76)" }}>Timeline ⏳</h1>
+        <h1 style={{ color: "rgb(90, 109, 77)" }}>Timeline ⏳</h1>
         <ul className="content-ul">
           <li className="content-li">
             <div className="picture-header">
