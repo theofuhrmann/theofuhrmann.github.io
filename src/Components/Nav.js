@@ -22,13 +22,6 @@ function Nav() {
         <div className="wrap-links">
           <NavLink
             activeStyle={{ color: "rgb(203, 107, 124)" }}
-            to="/about"
-            className="wrap-link"
-          >
-            <li className="nav-link"> About</li>
-          </NavLink>
-          <NavLink
-            activeStyle={{ color: "rgb(203, 107, 124)" }}
             to="/projects"
             className="wrap-link"
           >

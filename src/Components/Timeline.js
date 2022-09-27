@@ -16,9 +16,9 @@ function Timeline() {
         <h1 style={{ color: "rgb(205, 111, 76)" }}>Timeline ⏳</h1>
         <ul className="content-ul">
           <li className="content-li">
-            <div className="timeline-header">
-              <img className="timeline-picture" src={Discoverfy} alt="" />
-              <div style={{ marginLeft: "20px" }}>
+            <div className="picture-header">
+              <img className="small-picture" src={Discoverfy} alt="" />
+              <div className="picture-text">
                 <h2> Full-Stack developer </h2>
                 <h3> DISCOVERFY </h3>
                 <p>
@@ -51,9 +51,9 @@ function Timeline() {
             </a>
           </li>
           <li className="content-li">
-            <div className="timeline-header">
-              <img className="timeline-picture" src={Picnic} alt="" />
-              <div style={{ marginLeft: "20px" }}>
+            <div className="picture-header">
+              <img className="small-picture" src={Picnic} alt="" />
+              <div className="picture-text">
                 <h2> Waiter </h2>
                 <h3> Pic Nic </h3>
                 <p>
@@ -84,9 +84,9 @@ function Timeline() {
             </a>
           </li>
           <li className="content-li">
-            <div className="timeline-header">
-              <img className="timeline-picture" src={Sitgespc} alt="" />
-              <div style={{ marginLeft: "20px" }}>
+            <div className="picture-header">
+              <img className="small-picture" src={Sitgespc} alt="" />
+              <div className="picture-text">
                 <h2> 3D Printing Instructor </h2>
                 <h3> Sitges PC </h3>
                 <p>
@@ -119,9 +119,9 @@ function Timeline() {
             </a>
           </li>
           <li className="content-li">
-            <div className="timeline-header">
-              <img className="timeline-picture" src={Tempsdelleure} alt="" />
-              <div style={{ marginLeft: "20px" }}>
+            <div className="picture-header">
+              <img className="small-picture" src={Tempsdelleure} alt="" />
+              <div className="picture-text">
                 <h2> Certified LEGO Robotics Instructor </h2>
                 <h3> Temps de Lleure </h3>
                 <p>

@@ -1,5 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import Tfg from "../Images/tfg.png";
+import Mf from "../Images/mf.png";
+import Delaunay from "../Images/delaunay.png";
+import Moria from "../Images/moria.png";
 import "../App.css";
 
 function Projects() {
@@ -12,7 +16,13 @@ function Projects() {
         <h1 style={{ color: "rgb(90, 109, 77)" }}>Projects ✏️</h1>
         <ul className="content-ul">
           <li className="content-li">
-            <h3> Cybervulnerability Exploitability Classifier </h3>
+            <div className="picture-header">
+              <img className="small-picture" src={Tfg} alt="" />
+              <div className="picture-text">
+                <h3> Cybervulnerability Exploitability Classifier </h3>
+                <button className="tag">Python</button>
+              </div>
+            </div>
             <p>
               For my final thesis for my Computer Science degree I trained
               various machine learning models with gathered CVE data to predict
@@ -33,7 +43,14 @@ function Projects() {
             </a>
           </li>
           <li className="content-li">
-            <h3> Voice-Sex Recognition Classifier </h3>
+            <div className="picture-header">
+              <img className="small-picture" src={Mf} alt="" />
+              <div className="picture-text">
+                <h3> Voice-Sex Recognition Classifier </h3>
+                <button className="tag">Python</button>
+                <button className="tag">R</button>
+              </div>
+            </div>
             <p>
               Found patterns given various voice features to recognize the sex
               of the speaker in an audio recording using neural networks and
@@ -53,7 +70,13 @@ function Projects() {
             </a>
           </li>
           <li className="content-li">
-            <h3> Interactive Delaunay triangulation </h3>
+            <div className="picture-header">
+              <img className="small-picture" src={Delaunay} alt="" />
+              <div className="picture-text">
+                <h3> Interactive Delaunay triangulation </h3>
+                <button className="tag">JavaScript</button>
+              </div>
+            </div>
             <p>
               Implemented the Delaunay triangulation with HTML, CSS and
               JavaScript using a doubly connected edge list (DCEL). This
@@ -73,7 +96,13 @@ function Projects() {
             </a>
           </li>
           <li className="content-li">
-            <h3> AI Player for Moria </h3>
+            <div className="picture-header">
+              <img className="small-picture" src={Moria} alt="" />
+              <div className="picture-text">
+                <h3> AI Player for Moria </h3>
+                <button className="tag">C++</button>
+              </div>
+            </div>
             <p>
               Artificial Intelligence for a player in the Moria competition, a
               contest involving 240+ computer science students at the Barcelona
