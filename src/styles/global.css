@@ -170,3 +170,28 @@ img {
 body {
   transition: none;
 }
+
+body.fullscreen {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.fullscreen .container {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+body.fullscreen main {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  body.fullscreen,
+  body.fullscreen .container,
+  body.fullscreen main {
+    height: auto;
+    overflow: visible;
+  }
+}

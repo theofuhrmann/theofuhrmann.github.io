@@ -1,5 +1,5 @@
 ---
-const { title = "Page" } = Astro.props;
+const { title = "Page", fullscreen = false } = Astro.props;
 
 import Sidebar from "../components/Sidebar.astro";
 import "../styles/global.css";
@@ -14,7 +14,7 @@ import "../styles/global.css";
     <script src="/lib/theme-util.js" type="text/javascript" is:inline></script>
     <title>{title}</title>
   </head>
-  <body>
+  <body class={fullscreen ? "fullscreen" : ""}>
     <div class="container">
       <Sidebar />
       <main>

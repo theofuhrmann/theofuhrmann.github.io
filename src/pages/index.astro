@@ -3,35 +3,46 @@ import SidebarLayout from "../layouts/SideBarLayout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 ---
 
-<SidebarLayout title="home">
-  <ProjectCard
-    title="Weathered Chaos (2025)"
-    description="Music conditioned by the current weather and double pendulums using RAVE and MIDI. "
-    image="/images/Weathered_Chaos_1.png"
-    link="/projects/weathered-chaos"
-  />
-  <ProjectCard
-    title="Liquiprism (2024)"
-    description="A web app implementation of the Liquiprism paper, a 3D cube made of cellular automata that generate polyphonic music."
-    image="/images/Liquiprism_1.png"
-    link="/projects/liquiprism"
-  />
-  <ProjectCard
-    title="Wide Awake - Tofu Wizard (2023)"
-    description="A psychedelic alternative pop track released on November 8, 2023. Written, composed, produced, mixed, and mastered by me."
-    image="/images/Wide_Awake.png"
-    link="/projects/wide-awake"
-  />
-  <ProjectCard
-    title="Cybervulnerability Exploitability Classifier (2022)"
-    description="A machine learning project for predicting the exploitability of cybervulnerabilities, helping companies prioritize their cybersecurity efforts."
-    image="/images/Cybervulnerability_Exploitability_Classifier.png"
-    link="/projects/cybervulnerability-exploitability-classifier"
-  />
-  <ProjectCard
-    title="Voice-Sex Recognition Classifier (2019)"
-    description="Classifier that recognizes the sex of a speaker in audio recordings using neural networks and machine learning models."
-    image="/images/Voice_Sex_Recognition_Classifier.png"
-    link="projects/voice-sex-recognition-classifier"
-  />
+<SidebarLayout title="home" fullscreen>
+  <div class="cards-list">
+    <ProjectCard
+      title="Weathered Chaos (2025)"
+      description="Music conditioned by the current weather and double pendulums using RAVE and MIDI. "
+      image="/images/Weathered_Chaos_1.png"
+      link="/projects/weathered-chaos"
+    />
+    <ProjectCard
+      title="Liquiprism (2024)"
+      description="A web app implementation of the Liquiprism paper, a 3D cube made of cellular automata that generate polyphonic music."
+      image="/images/Liquiprism_1.png"
+      link="/projects/liquiprism"
+    />
+    <ProjectCard
+      title="Wide Awake - Tofu Wizard (2023)"
+      description="A psychedelic alternative pop track released on November 8, 2023. Written, composed, produced, mixed, and mastered by me."
+      image="/images/Wide_Awake.png"
+      link="/projects/wide-awake"
+    />
+    <ProjectCard
+      title="Cybervulnerability Exploitability Classifier (2022)"
+      description="A machine learning project for predicting the exploitability of cybervulnerabilities, helping companies prioritize their cybersecurity efforts."
+      image="/images/Cybervulnerability_Exploitability_Classifier.png"
+      link="/projects/cybervulnerability-exploitability-classifier"
+    />
+    <ProjectCard
+      title="Voice-Sex Recognition Classifier (2019)"
+      description="Classifier that recognizes the sex of a speaker in audio recordings using neural networks and machine learning models."
+      image="/images/Voice_Sex_Recognition_Classifier.png"
+      link="projects/voice-sex-recognition-classifier"
+    />
+  </div>
 </SidebarLayout>
+
+<style>
+  .cards-list {
+    max-height: 100%;
+    overflow-y: auto;
+    padding-right: 6px;
+    width: 100%;
+  }
+</style>
