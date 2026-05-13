@@ -189,7 +189,8 @@ body.fullscreen .container {
 body.fullscreen main {
   height: 100%;
   min-height: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  justify-content: safe center;
 }
 
 @media (max-width: 768px) {
