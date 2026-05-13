@@ -1,0 +1,46 @@
+---
+const { title = "Page" } = Astro.props;
+
+import Sidebar from "../components/Sidebar.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/theme-util.js" type="text/javascript" is:inline></script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="container">
+      <Sidebar />
+      <main>
+        <slot />
+      </main>
+    </div>
+    <script is:inline>
+      const toggle = document.getElementById("theme-toggle");
+      const body = document.body;
+      const darkMode = localStorage.getItem("darkMode");
+      if (toggle) {
+        if (darkMode === "enabled") {
+          body.classList.add("dark-mode");
+          toggle.checked = true;
+        }
+
+        toggle.addEventListener("change", () => {
+          if (toggle.checked) {
+            body.classList.add("dark-mode");
+            localStorage.setItem("darkMode", "enabled");
+          } else {
+            body.classList.remove("dark-mode");
+            localStorage.setItem("darkMode", "disabled");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

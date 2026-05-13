@@ -1,0 +1,94 @@
+---
+// Props passed to the card component
+const { title, description, image, link } = Astro.props;
+---
+
+<a href={link} class="project-card">
+    <div class="project-content">
+        <h2 class="title">{title}</h2>
+        <p class="description">{description}</p>
+    </div>
+    <img src={image} alt={`${title} cover`} class="project-image" />
+</a>
+
+<style>
+    .project-card {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        background: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: box-shadow 0.2s;
+        margin-bottom: 20px;
+    }
+
+    .project-card:hover {
+        border-color: #82b19a;
+    }
+
+    .project-card:hover h2 {
+        color: #82b19a;
+    }
+
+    .project-image {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 0%;
+    }
+
+    .project-content {
+        padding: 10px 15px;
+    }
+
+    .project-content h2 {
+        margin: 0;
+        font-size: 1.25rem;
+        color: black;
+    }
+
+    .project-content p {
+        margin: 5px 0 0;
+        color: black;
+        font-size: 0.95rem;
+    }
+
+    body.dark-mode .project-card {
+        background-color: #000;
+        color: #fff;
+        border-color: white;
+    }
+    body.dark-mode .project-card h2,
+    body.dark-mode .project-card p {
+        color: white;
+    }
+
+    body.dark-mode .project-card:hover h2 {
+        color: #82b19a;
+    }
+
+    body.dark-mode .project-card:hover {
+        border-color: #82b19a;
+    }
+
+    .title {
+        margin: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to 3 lines */
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    .description {
+        margin: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limit to 3 lines */
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+</style>

@@ -1,0 +1,22 @@
+---
+const currentPath = Astro.url.pathname;
+
+import Themeslider from "../components/Themeslider.astro";
+import "../styles/global.css";
+---
+
+<div class="sidebar">
+  <nav>
+    <a href="/" class={currentPath === "/" ? "active" : ""}>home</a>
+    <a href="/about/" class={currentPath === "/about/" ? "active" : ""}>about</a
+    >
+    <a
+      href="/files/cv.pdf"
+      class={currentPath === "/files/cv.pdf" ? "active" : ""}>cv.pdf</a
+    >
+    <a href="/contact/" class={currentPath === "/contact/" ? "active" : ""}
+      >contact</a
+    >
+    <Themeslider id="theme-toggle" />
+  </nav>
+</div>

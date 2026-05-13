@@ -1,0 +1,40 @@
+---
+import SidebarLayout from "../../layouts/SideBarLayout.astro";
+---
+
+<SidebarLayout title="Liquiprism (2024)">
+    <h1>Liquiprism (2024)</h1>
+    <p>
+        The Liquiprism web app is inspired by the landmark paper that introduced
+        the Liquiprism [1]: a 3D cube containing cellular automata on each face.
+        These faces are sonified through the cellular activity in order to
+        generate polyphonic music.
+    </p>
+    <p>
+        To develop this application, I designed the Liquiprism's architecture,
+        consisting of its logic, visualisation, and sonification, using
+        JavaScript and TypeScript. I implemented the application with the
+        Astro.js framework and deployed it with Vercel.
+    </p>
+    <p>
+        The website is available at <a
+            href="https://liquiprism.vercel.app"
+            target="_blank">liquiprism.vercel.app</a
+        >. And you can find the code <a
+            href="https://github.com/theofuhrmann/liquiprism_app"
+            target="_blank">here</a
+        >.
+    </p>
+    <img
+        src="/images/Liquiprism_2.png"
+        alt="Liquiprism"
+        style="max-width: 100%; height: auto; width: 600px; align-self: center;"
+    />
+    <p>
+        [1] Dorin, Alan. "LiquiPrism: Generating polyrhythms with cellular
+        automata." <i
+            >Proceedings of the 2002 International Conference on
+            AuditoryDisplay, Kyoto, Japan, July 2.</i
+        > Vol. 5. 2002.
+    </p>
+</SidebarLayout>
