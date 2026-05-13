@@ -171,6 +171,11 @@ body {
   transition: none;
 }
 
+::selection {
+  background-color: #82b19a;
+  color: white;
+}
+
 body.fullscreen {
   height: 100vh;
   overflow: hidden;
